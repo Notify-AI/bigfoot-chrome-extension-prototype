@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Popup</title>
+  <style>
+    /* Add your styles here */
+    body {
+      min-width: 357px;
+      overflow-x: hidden;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: #f5f5f5;
+        color: #333;
+        font-family: sans-serif;
+        font-size: 14px;
+        text-align: center;
+    }
+    #insights {
+      padding: 10px;
+      background-color: #f5f5f5;
+      color: #333;
+      font-family: sans-serif;
+      font-size: 14px;
+      text-align: center;
+    }
+    #menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    .menu-item {
+      padding: 10px;
+      cursor: pointer;
+    }
+    .ohno {
+        padding: 10px;
+        background-color: #f5f5f5;
+        color: #333;
+        font-family: sans-serif;
+        font-size: 14px;
+        text-align: left;
+    }
+    .hidden {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+    <div id="insights">
+        You have 0 unseen insights.
+    </div>
+    <h2>Notes found on this page</h2>
+    <p class="ohno hidden">We couldn't find any notes on this page. It could be that we haven't built support or they would rather we not work with their notes. If you think this is a mistake, <a href="mailto:broken@getnotify.ai?subject=Oh+Nooooo">let us know.</a></p>
+    <ul id="menu">
+        <li class="menu-item">Loading...</li>
+    </ul>
+    <footer #id="footer">
+        <p>See more in <a href="https://notify-bigfoot-production-9b0711635f48.herokuapp.com/">Bigfoot</a></p>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+</html>
